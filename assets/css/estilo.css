@@ -1,7 +1,134 @@
-main{
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
     background-color: black;
-    color:white
+    color: white;
+    box-sizing: border-box;
 }
-nav{
-    text-align: left;
+
+/* Encabezado */
+header {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#logoNetflix {
+    width: 120px;
+}
+
+#signInButton {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+/* Secciones */
+main {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.content-section {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+#seccion1 {
+    background: url('../images/netflixfondo.webp') no-repeat center center;
+    background-size: cover;
+    padding: 100px 20px;
+}
+
+#seccion1 h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#seccion1 p {
+    font-size: 18px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form input[type="email"] {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.titulo1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.parrafo1 {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.section-image {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Ajuste de imágenes para las secciones */
+#fondoNetflix {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    #seccion1 h1 {
+        font-size: 36px;
+    }
+
+    form input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    form input[type="submit"] {
+        width: 100%;
+    }
+
+    .titulo1 {
+        font-size: 30px;
+    }
 }

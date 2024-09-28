@@ -9,44 +9,49 @@
 <body>
     <header>
         <div id="div1">
-        <nav>
-            <img src="assets/images/logoNetflix.jpg">
-            <input type="button" onclick="alert('Hello World')" value="Sign in">
-        </nav>
-</header>
-<main>
-    <section id="seccion1">
-    <h1>Unlimited movies ,TV shows, and more.</h1>
-    <img src="assets/images/netflixfondo.webp">
-    <p>Watch anywhere.Cancel anytime.</p>
-    <p>Ready to watch? Enter your email to create or restart your membership.</p>
-    <form action="form action=/action_page.php">
-        <input type="text" id="fname" name="fname" value="Email address">
-        <input type="email" id="email" name="email">
-        <input type="submit" value="GET STARTED>">
-    </form>
-    </div>
-</section>
-<section id="seccion2">
-    <h1 class="titulo1">Enjoy on your TV</h1>
-    <p  class="parrafo1">Watch on SmartTVs,Playstation,Xbox,Chromecast,Apple TV,Blue-ray players,and more.</p>
-    <img src="assets/images/imagen netflx3.webp">
+            <nav>
+                <img src="assets/images/logoNetflix.jpg" alt="Netflix Logo" id="logoNetflix">
+                <input type="button" onclick="alert('Hello World')" value="Sign in" id="signInButton">
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="seccion1">
+            <div class="content-section">
+                <h1>Unlimited movies, TV shows, and more.</h1>
+                <img src="assets/images/netflixfondo.webp" alt="Netflix Background" id="fondoNetflix">
+                <p>Watch anywhere. Cancel anytime.</p>
+                <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                <form action="/action_page.php">
+                    <input type="email" id="email" name="email" placeholder="Email address" required>
+                    <input type="submit" value="GET STARTED >">
+                </form>
+            </div>
+        </section>
+        
+        <section id="seccion2">
+            <div class="content-section">
+                <h1 class="titulo1">Enjoy on your TV</h1>
+                <p class="parrafo1">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+                <img src="assets/images/imagen netflx3.webp" alt="Enjoy on TV" class="section-image">
+            </div>
+        </section>
+        
+        <section id="seccion3">
+            <div class="content-section">
+                <h1 class="titulo1">Download your shows to watch offline.</h1>
+                <p class="parrafo1">Save your favorites easily and always have something to watch.</p>
+                <img src="assets/images/netflix imagen4.jpg" alt="Download Shows" class="section-image">
+            </div>
+        </section>
 
-</section>
-
-<section id="seccion3">
-    <h1 class="titulo1">Download your shows to watch online.</h1>
-    <p class="parrafo1">Save your favorites easily and always have something to watch.</p>
-    <img src="assets/images/netflix imagen4.jpg">
-</section>
-
-<section id="seccion4">
-    <h1 class="titulo1">Watch everywhere.</h1>
-    <p class="parrafo1">Stream unlimited movies and TV shows on your phone,tablet,laptop,and TV without paying more.</p>
-    <img src="assets/images/netflix imagen5.webp">
-</section>
-
-
-</main>
+        <section id="seccion4">
+            <div class="content-section">
+                <h1 class="titulo1">Watch everywhere.</h1>
+                <p class="parrafo1">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</p>
+                <img src="assets/images/netflix imagen5.webp" alt="Watch Everywhere" class="section-image">
+            </div>
+        </section>
+    </main>
 </body>
 </html>
